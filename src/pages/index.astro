@@ -1,11 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+
+import "../styles/global.css";
+const title = "Aliu Ibrahim Portfolio "
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={title}>
+	
 	<main>
-		<svg
+		<!-- <h1>{title}</h1> -->
+		<!-- <svg
 			class="astro-a"
 			width="495"
 			height="623"
@@ -32,8 +37,8 @@ import Card from '../components/Card.astro';
 					<stop offset="1" stop-opacity="0.2"></stop>
 				</linearGradient>
 			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		</svg> -->
+		<!-- <h1>Welcome to <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -59,11 +64,11 @@ import Card from '../components/Card.astro';
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
-		</ul>
+		</ul> -->
 	</main>
 </Layout>
 
-<style>
+<!-- <style>
 	main {
 		margin: auto;
 		padding: 1rem;
@@ -120,4 +125,4 @@ import Card from '../components/Card.astro';
 		gap: 2rem;
 		padding: 0;
 	}
-</style>
+</style> -->
