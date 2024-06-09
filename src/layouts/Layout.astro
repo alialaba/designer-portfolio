@@ -2,6 +2,15 @@
 interface Props {
 	title: string;
 }
+// import { load } from 'astro:client';
+
+
+//Nav item array of object element 
+const navItems = [
+  { id: 1 , text: 'Home', href: '/' },
+  {id: 2 , text: 'Profile', href: '/profile' },
+  {id: 3 , text: 'Contact', href: '/contact' },
+];
 
 
 
@@ -21,8 +30,12 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header  />
+		<Header  items={navItems} />
 		<slot />
+
+
+		<!-- Load the TypeScript script for the client-side -->
+		<!-- <script src={load('../scripts/nav.ts')} type="module"></script> -->
 	</body>
 </html>
 <!-- <style is:global>

@@ -1,23 +1,47 @@
 ---
+interface Item {
+  text : string;
+  href: string;
+}
 
+
+interface Props {
+  items: Item[];
+}
 
 const {items } = Astro.props;
-
-
 
 // Pass navItems to the component as a prop
 
 ---
 
-
-
 <header>
     <nav class="nav">
       <ul class="nav__list" id="nav__list">
+        {items.map((item)=>(
+          <li class="nav__item"><a   href={item.href} class="nav__link">{item.text}</a></li>
+        ))}
        
-          <!-- <li class="nav__item"><a   href="/" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="/profile" class="nav__link">Profile</a></li>
-          <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li> -->
       </ul>
      </nav>
    </header>
+
+   <script>
+    // Check if window and document are available
+if(typeof window !== "undefined" && typeof document !== "undefined"){
+
+// Get all elements with the class 'nav__link'
+const navLinks : NodeListOf <HTMLAnchorElement> = document.querySelectorAll(".nav__link");
+
+
+//Iterate over each link
+navLinks.forEach((link: HTMLAnchorElement)=>{
+// Check if the href of the link matches the current window location
+if(link.href == window.location.href){
+    // Set the 'aria-current' attribute to 'page'
+      link.setAttribute("aria-current", "page")
+}
+})
+}
+
+   </script>
