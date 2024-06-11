@@ -4,11 +4,11 @@
     --clr-dark-gray: #7f7f7f;
     --clr-light-gray: #e8e5e480;
 
-    --fs-xl:4rem;
-    --fs-subheading:2.2rem;
-    --fs-600:1.5rem;
-    --fs-400:1.2rem;
-    --fs-200:.9rem;
+    --fs-xl:5rem;
+    --fs-subheading:2.5rem;
+    --fs-600:1.7rem;
+    --fs-400:1.5rem;
+    --fs-200:1.2rem;
 
     font-size: 62.5%;
 
@@ -87,15 +87,15 @@ section, footer{
   }
 
 .fade__up{
-  transform: translateY(50px);
+  /* transform: translateY(50px);
   opacity: 0;
   transition-property: transform , opacity;
   transition-duration:  1s;
-  transition-timing-function: linear;
+  transition-timing-function: linear; */
 }
 .fade__view.fade__up, .fade__view .fade__up{
-  opacity: 1;
-  transform: none;
+  /* opacity: 1;
+  transform: none; */
 }
   /********************/
 /*NAVIGATION*/
@@ -122,7 +122,7 @@ section, footer{
 
 .nav__link{
     color: var(--clr-black);
-    font-size: .9rem;
+    font-size: 1.2rem;
     padding: .7em  1.8em;
 }
 
