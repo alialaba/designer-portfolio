@@ -170,28 +170,7 @@ h2{
 }
 
 
-/* FOOTER */
-.footer{
-  height: 60px;
-}
-.footer__wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer__social-link{
-  color: var(--clr-black);
-  font-size: .9rem;
-}
 
-.footer__social-item + .footer__social-item{
-  margin-left: .8em;
-}
-.footer__social-link:hover{
-  color: var(--clr-dark-gray);
-  cursor: pointer;
-
-}
 
 
 /* PRODUCTS */

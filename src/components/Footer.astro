@@ -1,0 +1,55 @@
+---
+interface Social{
+    name: string;
+    href: string;
+    label: string;
+}
+
+interface Props{
+    socials: Social[];
+}
+
+const {socials} = Astro.props;
+---
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__brand-name">
+          <p>&copy Ali_baba464</p>
+        </div>
+         <div class="footer__social-list">
+            {socials.map((social)=>(
+                <span class="footer__social-item"><a href={social.href} aria-label={social.label}  class="footer__social-link">{social.name}</a></span> 
+            ))}
+        </div>
+
+      </div>
+    </div>
+   </footer>
+
+   <style>
+    /* FOOTER */
+.footer{
+  height: 60px;
+}
+.footer__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__social-link{
+  color: var(--clr-black);
+  font-size: 1.3rem;
+}
+
+.footer__social-item + .footer__social-item{
+  margin-left: .8em;
+}
+.footer__social-link:hover{
+  color: var(--clr-dark-gray);
+  cursor: pointer;
+
+}
+   </style>
