@@ -1,0 +1,177 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Xine",
+        "done": true,
+        "imgCover": "/img/xine.png",
+        "title": "Project management tool",
+        "jobDetail": {
+          "client": "Xine",
+          "role": "Product Desiger",
+          "focus": "Saas"
+        },
+        "productImg2": {
+          "img": "/img/xine-7.jpeg",
+          "overview": "An effective project management tool for tracking and managing assignments and projects collaboratively."
+        },
+        "productImgDetails": [
+          "/img/xine-3.png",
+          "/img/xine-8.png",
+          "/img/xi1.png",
+          "/img/xine-5.png"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Rutole",
+        "done": true,
+        "imgCover": "/img/rutole-1.png",
+        "title": "Prioritize safety while driving",
+        "jobDetail": {
+          "client": "Rutole",
+          "role": "Product Desiner, Brant Designer, Ux writer, Interaction Design",
+          "focus": "Safety"
+        },
+        "productImg2": {
+          "img": "/img/rutole-2.png",
+          "overview": "Prioritizing road safety benefits you, fellow drivers, and your finances. Safe driving lowers accident risks, cuts expenses, and increases earnings through reduced repair and insurance costs. Make safety your driving focus for financial and road well-being."
+        },
+        "productImgDetails": [
+          "/img/rutole-3.png",
+          "/img/rutole-4.png",
+          "/img/rutole-5.png",
+          "/img/rutole-6.png"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Cretly",
+        "done": true,
+        "imgCover": "/img/cretly-1.png",
+        "title": "Ensuring timely and efficient disposal of refuse.",
+        "jobDetail": {
+          "client": "Cretly",
+          "role": "Product Designer",
+          "focus": "Saas"
+        },
+        "productImg2": {
+          "img": "/img/cretly-2.png",
+          "overview": "Recycling is crucial in today's eco-conscious world, yet awareness is lacking. We educate clients on recycling's importance and provide convenient recycling solutions."
+        },
+        "productImgDetails": [
+          "/img/cretly-3.png",
+          "img/cretly-4.png",
+          "img/cretly-5.png",
+          "img/cretly-6.png"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Mini portfolio",
+        "done": false,
+        "imgCover": "/img/aesthetic.png",
+        "title": "A better way of creating portfoio",
+        "jobDetail": {
+          "client": "Ali",
+          "role": "UI Designer",
+          "focus": "Portfolios"
+        },
+        "productImg2": {
+          "img": "/img/aesthetic.png",
+          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro labore rerum repellat error. Maxime facere natus mollitia sequi suscipit?"
+        },
+        "productImgDetails": [
+          "/img/nifstate-5.png",
+          "https://example.com/productB.jpg",
+          "https://example.com/productB.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "E-nifstate",
+        "done": true,
+        "imgCover": "https://i.ibb.co/WVP1C5R/nifstate-2.png",
+        "title": "Real estate blockchain technology",
+        "jobDetail": {
+          "client": "E-nifstate",
+          "role": "Graphical UI Designer, Interaction Design",
+          "focus": "Saas"
+        },
+        "productImg2": {
+          "img": "https://i.ibb.co/0rR8hF7/nifstate-3.png",
+          "overview": "E-nifstate is a web3 real estate company that employs blockchain technology, guaranteeing transparent and secure transactions visible to all."
+        },
+        "productImgDetails": [
+          "https://i.ibb.co/N7Pbpt6/nifstate-5.png",
+          "https://i.ibb.co/cDXTmXm/nifstate-whi-3.png",
+          "https://i.ibb.co/5BFkn9y/nifstate-ex-6.png",
+          "https://i.ibb.co/M53r20z/nifstate-whi-2.png"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Retey",
+        "done": false,
+        "imgCover": "https://i.ibb.co/3vKjdRW/retey-002.png",
+        "title": "A better way to deal with every day",
+        "jobDetail": {
+          "client": "Retey",
+          "role": "Creative Director",
+          "focus": "Brand identity"
+        },
+        "productImg2": {
+          "img": "https://i.ibb.co/0rR8hF7/nifstate-3.png",
+          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro labore rerum repellat error. Maxime facere natus mollitia sequi suscipit?"
+        },
+        "productImgDetails": [
+          "https://i.ibb.co/N7Pbpt6/nifstate-5.png",
+          "https://i.ibb.co/cDXTmXm/nifstate-whi-3.png",
+          "https://i.ibb.co/5BFkn9y/nifstate-ex-6.png",
+          "https://i.ibb.co/M53r20z/nifstate-whi-2.png"
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2021 - 2022",
+        "items": [
+          {
+            "title": "User Experience Certificate",
+            "description": "Interaction Design Foundation"
+          },
+          {
+            "title": "UX Portfolio Certificate",
+            "description": "Interaction Design Foundation"
+          }
+        ]
+      },
+      {
+        "year": "2021- 2022",
+        "items": [
+          {
+            "title": "UI/UX Designer",
+            "description": "Taskmobile.ng"
+          },
+          {
+            "title": "Lead Product Designer",
+            "description": "Tracker"
+          }
+        ]
+      },
+      {
+        "year": "2023 - till date",
+        "items": [
+          {
+            "title": "Lead Graphic UI Design",
+            "description": "Brainstack Academy"
+          },
+          {
+            "title": "UI/UX Designer",
+            "description": "Sparro"
+          }
+        ]
+      }
+    ]
+  }
+  

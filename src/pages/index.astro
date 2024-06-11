@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Intro from "../components/Intro.astro";
+import Project from '../components/Project.astro';
 
 import "../styles/global.css";
 //change the name below to your name
@@ -19,6 +20,7 @@ const expertises = [
 	
 	<main>
 	  <Intro introTitle={introTitle} expertises={expertises}/>
+	  <Project/>
 	</main>
 </Layout>
 
