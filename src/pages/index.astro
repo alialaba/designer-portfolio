@@ -8,6 +8,7 @@ import "../styles/global.css";
 const title = "Aliu Ibrahim Portfolio ";
 
 const introTitle = "A brand and product designer working with clients globally";
+const isProject = false;
 
 const expertises = [
 	{ text: "User Experience Design"}, 
@@ -16,7 +17,7 @@ const expertises = [
 	{ text: "User Interface"}
 	];
 ---
-<Layout title={title}>
+<Layout title={title} isProject={isProject}>
 	
 	<main>
 	  <Intro introTitle={introTitle} expertises={expertises}/>
