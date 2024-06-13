@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProductDetail from "../components/ProjectDetail.astro";
+import site from "../data/site.json";
+const {projects} = site;
+
+import "../styles/global.css";
+
+//change the name below to your name
+const title = "Aliu Ibrahim Portfolio ";
+
+
+---
+
+<Layout title={title}>
+   <ProductDetail projects={projects}/>
+</Layout>

@@ -1,0 +1,103 @@
+---
+const {project} = Astro.props;
+---
+
+
+        <article class="project__item">
+            <!-- href=`${project.done && "project.html?id=1"} ` -->
+            <!-- "window.location.href='product.html?id=1'" -->
+            <a class="project__link-overlay" onclick={project.done && `window.location.href='product.html?id=${project.id}'`}>
+                <div class="project__overlay"></div>
+            </a>
+            <img class="project__img" src={project.imgCover} alt={project.name}>
+            <div class="project__content">
+                <div>
+                    <p class="project__name">{project.name}</p>
+                </div>
+                <div>
+                    <!-- href=`${project.done && "project.html?id=1"}` -->
+                    <a class=`project__link ${project.done ? "project__link--light" : "project__link--dark"} ` onclick={project.done && `window.location.href='product.html?id=${project.id}'`}>
+                        <i class=`fa-solid ${project.done ? "fa-arrow-up" : "fa-lock"}`></i>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+<style>
+.project__item{
+  position: relative;
+}
+.project__item .project__overlay{
+  background-color: rgba(0,0,0, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.project__item:hover  .project__overlay{
+  opacity: 1;
+}
+.project__link-overlay{
+  cursor: pointer;
+}
+.project__img{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.project__content{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.project__item:hover  .project__content{
+  opacity: 1;
+}
+.project__name{
+  color: var(--clr-white);
+}
+.project__link{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__link--light{
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  cursor: pointer;
+}
+.project__link--dark{
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+.project__coming-soon{
+  color: var(--clr-dark-gray);
+}
+
+</style>
+
+<script>
+    // const projectLinkEl = document.querySelector(".project__link-overlay");
+
+    // projectLinkEl.addEventListener("click", ()=>{
+    //     console.log("clicked");
+    // })
+</script>
