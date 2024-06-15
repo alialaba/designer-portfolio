@@ -1,16 +1,7 @@
 ---
-interface Item {
-  text : string;
-  href: string;
-}
+import data from "../data/site.json";
+ const{navItems} = data;
 
-
-interface Props {
-  items: Item[];
-}
-
-
-const {items } = Astro.props;
 
 // Pass navItems to the component as a prop
 
@@ -19,7 +10,7 @@ const {items } = Astro.props;
 <header>
     <nav class="nav">
       <ul class="nav__list" id="nav__list">
-        {items.map((item)=>(
+        {navItems.map((item)=>(
           <li class="nav__item"><a   href={item.href} class="nav__link">{item.text}</a></li>
         ))}
        
@@ -27,5 +18,5 @@ const {items } = Astro.props;
      </nav>
    </header>
 
-<script src="../scripts/active-nav.ts"></script>
+<script src="../scripts/main.js"></script>
   

@@ -14,3 +14,12 @@ if(typeof window !== "undefined" && typeof document !== "undefined"){
     }
     })
     }
+
+
+    const closeIcon = document.getElementById("close__link");
+
+    closeIcon?.addEventListener("click", ()=>{
+     window.location.href = "/"
+    })
+
+    
