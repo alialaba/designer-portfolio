@@ -4,6 +4,12 @@
     {"id": 2 , "text": "Profile", "href": "/profile" },
     {"id": 3 ,"text": "Contact","href": "/contact" }
   ],
+  "expertises":  [
+    { "text": "User Experience Design"}, 
+    { "text": "Branding"},
+    { "text": "User Research"},
+    { "text": "User Interface"}
+    ],
   "socialItems":[
     { "id": 1 , "name": "Twitter", "href": "https://twitter.com/Ali_baba464", "label":"Designers' Twitter" },
     {"id": 2 , "name": "Linkedin", "href": "https://www.linkedin.com/in/ibrahimaliu/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BOjvKxy6%2BQNKuZPGJs%2BSJCA%3D%3D", "label": "Designers' Linkedin" },

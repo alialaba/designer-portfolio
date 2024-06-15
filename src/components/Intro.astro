@@ -1,21 +1,14 @@
 ---
 interface Props {
 	introTitle: string;
-	// body: string;
-	// href: string;
 }
 
-interface Expertises{
-	text: string
-}
-
-interface Props{
-	expertises: Expertises[];
-}
+import data from "../data/site.json";
+const {expertises} = data;
 
 
 
-const {introTitle, expertises } = Astro.props;
+const {introTitle} = Astro.props;
 ---
 
 <section class="hero fade__up">
