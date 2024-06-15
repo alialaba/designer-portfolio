@@ -5,23 +5,6 @@ interface Props {
 }
 // import { load } from 'astro:client';
 
-
-//Nav item array of object element 
-const navItems = [
-  { id: 1 , text: 'Home', href: '/' },
-  {id: 2 , text: 'Profile', href: '/profile' },
-  {id: 3 , text: 'Contact', href: '/contact' },
-];
-
-
-//Footer item 
-const socialItems = [
-  { id: 1 , name: 'Twitter', href: 'https://twitter.com/Ali_baba464', label:"Designers' Twitter" },
-  {id: 2 , name: 'Linkedin', href: 'https://www.linkedin.com/in/ibrahimaliu/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BOjvKxy6%2BQNKuZPGJs%2BSJCA%3D%3D', label: "Designers' Linkedin" },
-  {id: 3 , name: 'Behance', href: 'https://www.behance.net/aliuibrahim464', label: "Designers' Twitter" },
-];
-
-
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import CloseProjectDetail from "../components/CloseProject.astro";
@@ -51,10 +34,10 @@ const { title, isProject } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		{isProject ? <CloseProjectDetail/> : <Header  items={navItems} />}
+		{isProject ? <CloseProjectDetail/> : <Header/>}
 		<slot />
 
-     <Footer socials={socialItems}/>
+     <Footer/>
 		<!-- Load the TypeScript script for the client-side -->
 		<!-- <script src={load('../scripts/nav.ts')} type="module"></script> -->
 	</body>

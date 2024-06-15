@@ -1,15 +1,6 @@
 ---
-interface Social{
-    name: string;
-    href: string;
-    label: string;
-}
-
-interface Props{
-    socials: Social[];
-}
-
-const {socials} = Astro.props;
+import data from "../data/site.json"
+const {socialItems} = data
 ---
 
 <!-- FOOTER -->
@@ -20,7 +11,7 @@ const {socials} = Astro.props;
           <p>&copy Ali_baba464</p>
         </div>
          <div class="footer__social-list">
-            {socials.map((social)=>(
+            {socialItems.map((social)=>(
                 <span class="footer__social-item"><a href={social.href} aria-label={social.label}  class="footer__social-link">{social.name}</a></span> 
             ))}
         </div>
