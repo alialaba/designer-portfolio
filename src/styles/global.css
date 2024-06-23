@@ -150,29 +150,6 @@ h2{
   margin-bottom: 3em;
 }
 
-/* GET IN TOUCH */
-.intouch{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.intouch__title{
-  color: var(--clr-black);
-}
-.intouch__link{
-  color: var(--clr-dark-gray);
-}
-.intouch__link:hover{
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-
-
-
-
 
 /**********************/
 /* REFactor */
